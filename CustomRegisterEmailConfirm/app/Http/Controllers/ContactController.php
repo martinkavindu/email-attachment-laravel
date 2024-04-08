@@ -33,7 +33,6 @@ $mail_data = [
             ->from($mail_data['fromEmail'],$mail_data['fromName'])
             ->subject($mail_data['subject'])
             ->attach(public_path($mail_data['file_path']));
-
 });
 
 return redirect()->back()->with('success','Email sent successfully');
